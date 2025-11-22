@@ -11,7 +11,7 @@ class Moon < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/MoonForgeAI/moon/releases/download/v0.19.1/moon_0.19.1_Darwin_x86_64.tar.gz"
-      sha256 "3a4838b040df0ada31c5319b8a5e28cc6757690a2eb38e7f8c65c46deba27c85"
+      sha256 "584d73b06194914551ddf4351dd16cad0235bc9e30df2629e451002881bdf949"
 
       def install
         bin.install "moon"
@@ -23,7 +23,7 @@ class Moon < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/MoonForgeAI/moon/releases/download/v0.19.1/moon_0.19.1_Darwin_arm64.tar.gz"
-      sha256 "de2dd399f3bdaa9bb2acde0888bd13eb18273cd125043681d85bee5b539b8d91"
+      sha256 "50b6ce13adae4f9feb1c108785cb546d4a2b79f7b8ddad7b9d44479760a29822"
 
       def install
         bin.install "moon"
@@ -38,7 +38,7 @@ class Moon < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/MoonForgeAI/moon/releases/download/v0.19.1/moon_0.19.1_Linux_x86_64.tar.gz"
-      sha256 "11d88e14770d36798b895f51dcb22806b1361492fba0e89c93f1386e8ef6242c"
+      sha256 "ac6db19897e2a0185a15f8fe0ad39514ec49b1588bc0b37c39eb6dfc9e5aeffb"
       def install
         bin.install "moon"
         bash_completion.install "completions/moon.bash" => "moon"
@@ -49,7 +49,7 @@ class Moon < Formula
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
       url "https://github.com/MoonForgeAI/moon/releases/download/v0.19.1/moon_0.19.1_Linux_armv7.tar.gz"
-      sha256 "5cf0880a2c1eb95cf0c9575014de31765e98c6ee31608b18b97d55bd5e9bf993"
+      sha256 "b1d8231a605ea47d5c9cbd641ba5d6c84d3fdd4db62ba70671a6504ca9ff67ca"
       def install
         bin.install "moon"
         bash_completion.install "completions/moon.bash" => "moon"
@@ -60,7 +60,7 @@ class Moon < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/MoonForgeAI/moon/releases/download/v0.19.1/moon_0.19.1_Linux_arm64.tar.gz"
-      sha256 "4f622bff2ad0e35ce6d81832240050d5e24f879669284b6575ea82b0176df2ef"
+      sha256 "69103a337b353b12d4b8ffa8d710e5ec37829e41296a9c0766376143c77ae32d"
       def install
         bin.install "moon"
         bash_completion.install "completions/moon.bash" => "moon"
