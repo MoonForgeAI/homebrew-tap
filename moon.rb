@@ -5,13 +5,13 @@
 class Moon < Formula
   desc "A powerful game development AI agent that can build complete games from scratch. Expert in Unity, Unreal Engine, and Godot."
   homepage "https://moonforge.com"
-  version "0.20.0"
+  version "0.20.1"
   license "FSL-1.1-MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/MoonForgeAI/moon/releases/download/v0.20.0/moon_0.20.0_Darwin_x86_64.tar.gz"
-      sha256 "153580738a2e9b9caff1ed1c5e94118de6145024da55fb9e9f216b40948744ac"
+      url "https://github.com/MoonForgeAI/moon/releases/download/v0.20.1/moon_0.20.1_Darwin_x86_64.tar.gz"
+      sha256 "76f4c9902039642a74cde6a8d7633c477588df35c7ada6a9ed7e8a0589c02d33"
 
       define_method(:install) do
         bin.install "moon"
@@ -22,8 +22,8 @@ class Moon < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/MoonForgeAI/moon/releases/download/v0.20.0/moon_0.20.0_Darwin_arm64.tar.gz"
-      sha256 "76131d7f8e05a5c3af01a3db3ed3918482ae1cdfe8a6ae43f8d13995c6c11684"
+      url "https://github.com/MoonForgeAI/moon/releases/download/v0.20.1/moon_0.20.1_Darwin_arm64.tar.gz"
+      sha256 "c1c3a5d155eae1e6790b1843ed2dc102d2e30049ab6ebb3d404549bb66c6ec2e"
 
       define_method(:install) do
         bin.install "moon"
@@ -37,8 +37,8 @@ class Moon < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/MoonForgeAI/moon/releases/download/v0.20.0/moon_0.20.0_Linux_x86_64.tar.gz"
-      sha256 "25face54f6a5e1c8e15bfed7e31424e607d4ed2af988603d11418bb89f7b696a"
+      url "https://github.com/MoonForgeAI/moon/releases/download/v0.20.1/moon_0.20.1_Linux_x86_64.tar.gz"
+      sha256 "9b64d8b55993d6fd7795b2e16daf216e37ce622e98c28473fc5fc66a49e338e7"
       define_method(:install) do
         bin.install "moon"
         bash_completion.install "completions/moon.bash" => "moon"
@@ -48,8 +48,8 @@ class Moon < Formula
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/MoonForgeAI/moon/releases/download/v0.20.0/moon_0.20.0_Linux_armv7.tar.gz"
-      sha256 "8c5e8b62e73afdce518d45ad3dc65593f3ce8289dcf6560a1d715510635e66f1"
+      url "https://github.com/MoonForgeAI/moon/releases/download/v0.20.1/moon_0.20.1_Linux_armv7.tar.gz"
+      sha256 "417092785b8a7458683a0eb7fb9b255fa43428a55196ae382eb6754043c78876"
       define_method(:install) do
         bin.install "moon"
         bash_completion.install "completions/moon.bash" => "moon"
@@ -59,8 +59,8 @@ class Moon < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/MoonForgeAI/moon/releases/download/v0.20.0/moon_0.20.0_Linux_arm64.tar.gz"
-      sha256 "d035e4dc1cfbe1a7c0e478f1fb721fa2c58f70e0bea61e0986353ef4f0531213"
+      url "https://github.com/MoonForgeAI/moon/releases/download/v0.20.1/moon_0.20.1_Linux_arm64.tar.gz"
+      sha256 "cba34fb5567d762cf25677acc4b7e0626ea8d7fa5c9e303d2b196d12e2a25e37"
       define_method(:install) do
         bin.install "moon"
         bash_completion.install "completions/moon.bash" => "moon"
